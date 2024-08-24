@@ -26,6 +26,7 @@ def draw_board():
             color = colors[(row + col) % 2]
             pygame.draw.rect(screen, color, pygame.Rect(col*SQUARE_SIZE, row*SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
+
 # Create board matrix
 def create_board():
     board = [

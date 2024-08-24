@@ -1,0 +1,3 @@
+git branch "name" : create new branch
+git checkout "name" : move to branch
+git commit "text" : log changes to document

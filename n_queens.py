@@ -22,7 +22,14 @@ def is_safe(board,row,col):
             return False
         else:
             return True
+
 def solve(board,row):
-    pass
+    if(row>= len(board)): return True
+    for i in range(len(board)):
+        if(is_safe(board, row)):
+            board[row][i] = 1
+            return solve(board, row+1)
+    return False
+    
 def print_solution_board(board):
     pass
